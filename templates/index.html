@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Russian Roulette</title>
+</head>
+<body>
+    <h1>Russian Roulette Game</h1>
+    <form method="post">
+        <button type="submit">Pull the Trigger</button>
+    </form>
+    {% if result is not none %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <p>Attempts: {{ attempts }}</p>
+    <div>
+        <a href="/">Reset</a>
+</body>
+</html>
